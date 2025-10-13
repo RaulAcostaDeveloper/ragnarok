@@ -1,4 +1,4 @@
-import { PrimitiveValue } from "../../../global/components/table/table.model";
+import { PrimitiveValue } from "../components/table/table.model";
 
 export const NO_DATA = "ND";
 
