@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import { CSVLink } from "react-csv";
 // import BrowserUpdatedIcon from "@mui/icons-material/BrowserUpdated";
 import DownloadIcon from "@mui/icons-material/Download";
 
@@ -65,7 +64,7 @@ export const TableCSVButtonsContainer = ({
       </CSVLink> */}
 
       {/* Descomentar si se quiere el botón de descargar solo lo filtrado de regreso */}
-      <CSVLink
+      {/* <CSVLink
         className={styles.title}
         data={filteredData}
         filename={title ? `${toKebabCase(title)}.csv` : "data-table.csv"}
@@ -79,7 +78,7 @@ export const TableCSVButtonsContainer = ({
           placeholder={LANGUAGE.table.buttons.downloadCSV}
           type={ButtonTypes.SUCCESS}
         />
-      </CSVLink>
+      </CSVLink> */}
     </>
   );
 };
