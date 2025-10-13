@@ -1,62 +1,32 @@
+import { GuildsTable } from "@/global/components/guildsTable/guildsTable";
 import { Table } from "@/global/components/table";
 import { columnsTable } from "@/global/components/table/table.model";
 import { SPANISH } from "@/global/language/constants/spanish";
 import Image from "next/image";
 
 export default function Home() {
-  const vehicleColumns: columnsTable = [
-    {
-      columnName: "Guild",
-      defaultSpace: 4,
-    },
-    {
-      columnName: "Castillo",
-      defaultSpace: 3,
-      orderColumn: true,
-    },
-  ];
-  const vehiclesTableData = [
-    {
-      guild: "Dream Team",
-      name: "Yesnelph",
-    },
-    {
-      guild: "Retired",
-      name: "Bergel",
-    },
-    {
-      guild: "Retired",
-      name: "Mersetzdeitz",
-    },
-    {
-      guild: "Amazing",
-      name: "Kriemhid",
-    },
-    {
-      guild: "Guerreiros.do.Emperium",
-      name: "Swanhild",
-    },
-    {
-      guild: "xFantasyTeamx",
-      name: "Fadhgridh",
-    },
-    {
-      guild: "xFantasyTeamx",
-      name: "Skoegul",
-    },
-    {
-      guild: "CONFLICT",
-      name: "Gondul",
-    },
+  const castillosGuild = [
+    { guild: "DreamTeam", castillo: "Yesnelph" },
+    { guild: "Retired", castillo: "Bergel" },
+    { guild: "Retired", castillo: "Merseedetz" },
+    { guild: "Amazing", castillo: "Kriemhild" },
+    { guild: "Guerreiros.do.Emperium", castillo: "Swanhild" },
+    { guild: "FantasyTeam", castillo: "Fadhgridh" },
+    { guild: "FantasyTeam", castillo: "Skoegul" },
+    { guild: "CONFLICT", castillo: "Gondul" },
+    { guild: "TOROSLocos", castillo: "Bright Arbor" },
+    { guild: "Retired", castillo: "Sacred Palace" },
+    { guild: "FantasyTeam", castillo: "Holy Shadow Palace" },
+    { guild: "FearLess", castillo: "Scarlet Palace" },
+    { guild: "JOES", castillo: "Bamboo Grove Hill" },
+    { guild: "FantasyTeam", castillo: "Neuschwanstein" },
+    { guild: "JOES", castillo: "Hohenschwangau" },
+    { guild: "Retired", castillo: "Nuenberg" },
+    { guild: "ANBU", castillo: "Wuerzburg" },
   ];
   return (
     <div>
-      <Table
-        LANGUAGE={SPANISH}
-        title="Resultados de la woe 12 de Octubre 2025"
-        columns={vehicleColumns}
-        data={vehiclesTableData}
-      />
+      <GuildsTable castillosGuilds={castillosGuild} />
       <p>Pendiente: Poner el número del castillo según la posición del mapa</p>
       <p>Pendiente: Poner el mapa (valkyria, brithonia, etc)</p>
       <div className="sad">
