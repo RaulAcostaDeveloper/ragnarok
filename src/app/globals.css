@@ -109,3 +109,8 @@ button {
 }
 
 /* TO DO añadir variables para bordes, etc. */
+.sad {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

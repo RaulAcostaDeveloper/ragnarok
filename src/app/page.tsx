@@ -1,6 +1,7 @@
 import { Table } from "@/global/components/table";
 import { columnsTable } from "@/global/components/table/table.model";
 import { SPANISH } from "@/global/language/constants/spanish";
+import Image from "next/image";
 
 export default function Home() {
   const vehicleColumns: columnsTable = [
@@ -56,6 +57,16 @@ export default function Home() {
         columns={vehicleColumns}
         data={vehiclesTableData}
       />
+      <p>Pendiente: Poner el número del castillo según la posición del mapa</p>
+      <p>Pendiente: Poner el mapa (valkyria, brithonia, etc)</p>
+      <div className="sad">
+        <Image
+          src={"/ro/MAPA_WOE_ROLA.png"}
+          width={735}
+          height={405}
+          alt="mapa woe"
+        />
+      </div>
     </div>
   );
 }
