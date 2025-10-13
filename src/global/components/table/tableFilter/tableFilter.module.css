@@ -1,0 +1,44 @@
+/* Estilos especiales para el selector */
+.selectInput {
+  appearance: none;
+  background-color: white;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 8px;
+  width: 100%;
+  margin-top: 5px;
+
+  -webkit-box-shadow: 2px 2px 5px 0px var(--shadow-bold);
+  -moz-box-shadow: 2px 2px 5px 0px var(--shadow-bold);
+  box-shadow: 2px 2px 5px 0px var(--shadow-bold);
+}
+
+.selectInput:focus {
+  outline: none;
+}
+
+.selectInput:hover {
+  -webkit-box-shadow: 2px 2px 5px 0px var(--company-color-4);
+  -moz-box-shadow: 2px 2px 5px 0px var(--company-color-4);
+  box-shadow: 2px 2px 5px 0px var(--company-color-4);
+}
+
+.selectedOption {
+  border: 2px solid var(--company-color-4);
+  -webkit-box-shadow: 2px 2px 5px 0px var(--company-color-4);
+  -moz-box-shadow: 2px 2px 5px 0px var(--company-color-4);
+  box-shadow: 2px 2px 5px 0px var(--company-color-4);
+}
+
+.selectInput option {
+  font-size: 1.2rem;
+  /* No se puede poner cursor pointer en un option */
+  /* cursor: pointer; */
+}

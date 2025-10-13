@@ -1,0 +1,29 @@
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.topActions {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.tableContent {
+  width: max-content;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 2px 2px 5px 0px var(--shadow-bold);
+  -moz-box-shadow: 2px 2px 5px 0px var(--shadow-bold);
+  box-shadow: 2px 2px 5px 0px var(--shadow-bold);
+}
+
+.inside {
+  width: fit-content;
+  padding: 10px;
+  padding-left: 5px;
+  border-radius: 4px;
+}

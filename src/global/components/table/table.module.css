@@ -1,0 +1,20 @@
+.container {
+  -webkit-overflow-scrolling: touch;
+  margin: 10px 0;
+  overflow-x: auto;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Estilos del scrollbar */
+.container::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 15px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: e-resize;
+}

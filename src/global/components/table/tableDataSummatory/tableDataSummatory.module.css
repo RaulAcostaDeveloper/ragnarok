@@ -1,0 +1,47 @@
+.tableDataSummatory {
+  width: 100%;
+  display: flex;
+  margin-top: -10px; /* medida en contraposicion al margen de la tabla */
+  box-shadow: 2px 2px 5px 0px var(--shadow-bold);
+  background-color: var(--company-color-1);
+  border-top: 1px solid rgb(65 48 48 / 15%);
+}
+
+.summatory,
+.average {
+  font-size: 2rem;
+  padding: 0.5rem;
+  text-align: left;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(230, 230, 230);
+  & p {
+    font-weight: bold;
+  }
+}
+
+.button {
+  width: 100%;
+  cursor: copy;
+}
+
+.button:hover span {
+  text-decoration: underline;
+}
+
+.button p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button svg {
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.4);
+  cursor: help;
+}
+
+.button svg:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
