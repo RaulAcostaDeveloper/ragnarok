@@ -19,9 +19,28 @@ function asignarNumerosYReinos(arr: CastilloGuild[]): CastilloGuild[] {
   const mapaCastillos: Record<string, { numero: number; reino: string }> = {
     Skoegul: { numero: 7, reino: "Valkyria (Prontera)" },
     Gondul: { numero: 9, reino: "Valkyria (Prontera)" },
-    Brynhildr: { numero: 5, reino: "Valkyria (Prontera)" },
-    Kremhild: { numero: 1, reino: "Valkyria (Prontera)" },
-    Hrish: { numero: 3, reino: "Valkyria (Prontera)" },
+    Fadhgridh: { numero: 5, reino: "Valkyria (Prontera)" },
+    Kriemhild: { numero: 1, reino: "Valkyria (Prontera)" },
+    Swanhild: { numero: 3, reino: "Valkyria (Prontera)" },
+
+    Bergel: { numero: 8, reino: "Britoniah (Geffen)" },
+    Yesnelph: { numero: 7, reino: "Britoniah (Geffen)" },
+    Eeyolbriggar: { numero: 9, reino: "Britoniah (Geffen)" },
+    Repherion: { numero: 2, reino: "Britoniah (Geffen)" },
+    Mersetzdeitz: { numero: 3, reino: "Britoniah (Geffen)" },
+
+    Hohenschwangau: { numero: 7, reino: "Luina (Aldebaran)" },
+    Wuerzburg: { numero: 9, reino: "Luina (Aldebaran)" },
+    Neuschwanstein: { numero: 1, reino: "Luina (Aldebaran)" },
+    Nuenberg: { numero: 2, reino: "Luina (Aldebaran)" },
+    Rothenburg: { numero: 3, reino: "Luina (Aldebaran)" },
+
+    "Bright Arbor": { numero: 7, reino: "Greenwood (Payon)" },
+    "Bamboo Grove Hill": { numero: 8, reino: "Greenwood (Payon)" },
+    "Holy Shadow Palace": { numero: 9, reino: "Greenwood (Payon)" },
+    "Scarlet Palace": { numero: 3, reino: "Greenwood (Payon)" },
+    "Sacred Altar": { numero: 1, reino: "Greenwood (Payon)" },
+
     // Aquí podrías luego agregar los de Greenwood (Payon) y otros reinos
   };
 
@@ -87,6 +106,7 @@ export const GuildsTable = ({ castillosGuilds }: Props) => {
           title="Resultados de la woe 12 de Octubre 2025"
           columns={columns}
           data={data}
+          windowMaxSize={50}
         />
       )}
     </>

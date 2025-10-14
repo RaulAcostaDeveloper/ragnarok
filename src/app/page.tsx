@@ -6,29 +6,37 @@ import Image from "next/image";
 
 export default function Home() {
   const castillosGuild = [
-    { guild: "DreamTeam", castillo: "Yesnelph" },
-    { guild: "Retired", castillo: "Bergel" },
-    { guild: "Retired", castillo: "Merseedetz" },
-    { guild: "Amazing", castillo: "Kriemhild" },
-    { guild: "Guerreiros.do.Emperium", castillo: "Swanhild" },
-    { guild: "FantasyTeam", castillo: "Fadhgridh" },
+    // Prontera
     { guild: "FantasyTeam", castillo: "Skoegul" },
     { guild: "CONFLICT", castillo: "Gondul" },
-    { guild: "TOROSLocos", castillo: "Bright Arbor" },
-    { guild: "Retired", castillo: "Sacred Palace" },
-    { guild: "FantasyTeam", castillo: "Holy Shadow Palace" },
-    { guild: "FearLess", castillo: "Scarlet Palace" },
-    { guild: "JOES", castillo: "Bamboo Grove Hill" },
-    { guild: "FantasyTeam", castillo: "Neuschwanstein" },
+    { guild: "FantasyTeam", castillo: "Fadhgridh" },
+    { guild: "Amazing", castillo: "Kriemhild" },
+    { guild: "Guerreiros.do.Emperium", castillo: "Swanhild" },
+
+    // Geffen
+    { guild: "Retired", castillo: "Bergel" },
+    { guild: "DreamTeam", castillo: "Yesnelph" },
+    { guild: "Retired", castillo: "Mersetzdeitz" },
+    { guild: " - ", castillo: "Eeyolbriggar" },
+    { guild: " - ", castillo: "Repherion" },
+
+    // Aldebaran
     { guild: "JOES", castillo: "Hohenschwangau" },
-    { guild: "Retired", castillo: "Nuenberg" },
     { guild: "ANBU", castillo: "Wuerzburg" },
+    { guild: "FantasyTeam", castillo: "Neuschwanstein" },
+    { guild: "Retired", castillo: "Nuenberg" },
+    { guild: "Retired", castillo: "Rothenburg" },
+
+    //Payon
+    { guild: "Retired", castillo: "Sacred Altar" },
+    { guild: "FearLess", castillo: "Scarlet Palace" },
+    { guild: "FantasyTeam", castillo: "Holy Shadow Palace" },
+    { guild: "JOES", castillo: "Bamboo Grove Hill" },
+    { guild: "TOROSLocos", castillo: "Bright Arbor" },
   ];
   return (
     <div>
       <GuildsTable castillosGuilds={castillosGuild} />
-      <p>Pendiente: Poner el número del castillo según la posición del mapa</p>
-      <p>Pendiente: Poner el mapa (valkyria, brithonia, etc)</p>
       <div className="sad">
         <Image
           src={"/ro/MAPA_WOE_ROLA.png"}
