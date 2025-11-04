@@ -103,7 +103,7 @@ export const GuildsTable = ({ castillosGuilds }: Props) => {
       {resultado && data && (
         <Table
           LANGUAGE={SPANISH}
-          title="Resultados de la woe 12 de Octubre 2025"
+          title="Resultados de la woe 2 de Noviembre 2025"
           columns={columns}
           data={data}
           windowMaxSize={50}

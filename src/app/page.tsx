@@ -7,32 +7,32 @@ import Image from "next/image";
 export default function Home() {
   const castillosGuild = [
     // Prontera
+    { guild: "ANBU", castillo: "Swanhild" },
+    { guild: "CONFLICT", castillo: "Kriemhild" },
+    { guild: "FearLess", castillo: "Fadhgridh" },
     { guild: "FantasyTeam", castillo: "Skoegul" },
-    { guild: "CONFLICT", castillo: "Gondul" },
-    { guild: "FantasyTeam", castillo: "Fadhgridh" },
-    { guild: "Amazing", castillo: "Kriemhild" },
-    { guild: "Guerreiros.do.Emperium", castillo: "Swanhild" },
+    { guild: "TorosLocos", castillo: "Gondul" },
 
     // Geffen
+    { guild: "FantasyTeam", castillo: "Repherion" },
+    { guild: "Retired", castillo: "Yesnelph" },
+    { guild: "Villains", castillo: "Eeyolbriggar" },
     { guild: "Retired", castillo: "Bergel" },
-    { guild: "DreamTeam", castillo: "Yesnelph" },
     { guild: "Retired", castillo: "Mersetzdeitz" },
-    { guild: " - ", castillo: "Eeyolbriggar" },
-    { guild: " - ", castillo: "Repherion" },
 
     // Aldebaran
-    { guild: "JOES", castillo: "Hohenschwangau" },
-    { guild: "ANBU", castillo: "Wuerzburg" },
-    { guild: "FantasyTeam", castillo: "Neuschwanstein" },
+    { guild: "FantasyTeam", castillo: "Hohenschwangau" },
+    { guild: "Villains", castillo: "Neuschwanstein" },
     { guild: "Retired", castillo: "Nuenberg" },
-    { guild: "Retired", castillo: "Rothenburg" },
+    { guild: "JOES", castillo: "Wuerzburg" },
+    { guild: "JOES", castillo: "Rothenburg" },
 
     //Payon
+    { guild: "DreamTeam", castillo: "Bamboo Grove Hill" },
+    { guild: "DreamTeam", castillo: "Bright Arbor" },
     { guild: "Retired", castillo: "Sacred Altar" },
-    { guild: "FearLess", castillo: "Scarlet Palace" },
-    { guild: "FantasyTeam", castillo: "Holy Shadow Palace" },
-    { guild: "JOES", castillo: "Bamboo Grove Hill" },
-    { guild: "TOROSLocos", castillo: "Bright Arbor" },
+    { guild: "TorosLocos", castillo: "Holy Shadow Palace" },
+    { guild: "Divas", castillo: "Scarlet Palace" },
   ];
   return (
     <div>
